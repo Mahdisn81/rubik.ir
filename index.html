@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>روبیک دات آی‌آر | بزرگترین مرجع فروش روبیک و بازی فکری</title>
+  <meta name="description" content="بزرگترین مرجع فروش روبیک و بازی فکری در ایران؛ از مکعب‌های مسابقاتی برندهای معتبر جهانی تا فیجت، بردگیم و بازی‌های آموزشی کودک، با مشاوره رایگان پیش از خرید.">
+  <link rel="icon" type="image/webp" href="assets/logo.webp">
+  <script>document.documentElement.classList.add('js');</script>
+  <style>
+    @import url('https://cdn.jsdelivr.net/npm/vazirmatn@33.0.3/Vazirmatn-font-face.css');
+
+    :root {
+      --bg: #f7f8fc;
+      --surface: #ffffff;
+      --ink: #0e1322;
+      --slate: #4a5468;
+      --muted: #8a93a8;
+      --line: #e7eaf3;
+
+      --brand: #2245e5;
+      --brand-deep: #1a35c0;
+      --brand-ink: #162a94;
+      --brand-soft: #eef1ff;
+      --brand-soft-2: #e3e9ff;
+
+      --green: #17b734;
+      --green-deep: #0f9228;
+      --green-soft: #eafbf0;
+
+      --orange: #f4813b;
+      --orange-deep: #e26a1f;
+      --orange-soft: #fff2e8;
+
+      --r-lg: 24px;
+      --r-md: 18px;
+      --r-sm: 12px;
+
+      --sh-sm: 0 1px 2px rgba(14, 19, 34, .04), 0 4px 16px rgba(14, 19, 34, .05);
+      --sh-md: 0 2px 4px rgba(14, 19, 34, .05), 0 16px 40px -12px rgba(14, 19, 34, .12);
+      --sh-lg: 0 12px 30px -8px rgba(34, 69, 229, .28);
+
+      --nav-h: 76px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nav-h) + 16px); }
+
+    body {
+      font-family: Vazirmatn, Tahoma, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.8;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    button { font-family: inherit; cursor: pointer; }
+
+    .container { width: min(1200px, 92%); margin-inline: auto; }
+
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+    }
+
+    section { scroll-margin-top: calc(var(--nav-h) + 10px); }
+
+    /* ---------- Buttons ---------- */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      border-radius: 14px; font-weight: 700; font-size: 15px;
+      padding: 13px 22px; border: 1px solid transparent;
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease, color .18s ease, border-color .18s ease;
+      white-space: nowrap;
+    }
+    .btn:active { transform: scale(.98); }
+    .btn--lg { padding: 15px 30px; font-size: 16px; border-radius: 16px; }
+    .btn--sm { padding: 9px 16px; font-size: 14px; border-radius: 11px; }
+    .btn--block { width: 100%; }
+
+    .btn--primary {
+      background: linear-gradient(135deg, var(--brand) 0%, #1f7eff 100%);
+      color: #fff; box-shadow: 0 8px 22px -8px rgba(34, 69, 229, .55);
+    }
+    .btn--primary:hover { transform: translateY(-2px); box-shadow: 0 14px 30px -8px rgba(34, 69, 229, .5); }
+
+    .btn--ghost {
+      background: var(--surface); color: var(--ink);
+      border-color: var(--line);
+    }
+    .btn--ghost:hover { border-color: var(--brand); color: var(--brand); transform: translateY(-2px); }
+
+    .btn--white {
+      background: #fff; color: var(--brand); box-shadow: 0 10px 26px -10px rgba(0, 0, 0, .35);
+    }
+    .btn--white:hover { transform: translateY(-2px); }
+
+    .btn--outline-white { background: transparent; color: #fff; border-color: rgba(255, 255, 255, .45); }
+    .btn--outline-white:hover { background: rgba(255, 255, 255, .1); border-color: #fff; transform: translateY(-2px); }
+
+    /* ---------- Eyebrow / headings ---------- */
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      color: var(--brand); background: var(--brand-soft);
+      border: 1px solid #dce3ff; border-radius: 999px;
+      padding: 6px 16px; font-size: 13px; font-weight: 700;
+    }
+    .eyebrow::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--brand); }
+
+    .section { padding: 96px 0; }
+    .section__head { max-width: 640px; margin: 0 auto 56px; text-align: center; }
+    .section__head .eyebrow { margin-bottom: 18px; }
+    .section__title { font-size: clamp(26px, 3.4vw, 38px); font-weight: 800; line-height: 1.5; letter-spacing: -.5px; }
+    .section__sub { color: var(--slate); font-size: 16px; margin-top: 12px; }
+
+    .grad { background: linear-gradient(120deg, var(--brand) 10%, #1f7eff 90%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+    /* ---------- Reveal animation ---------- */
+    .js .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s cubic-bezier(.22, 1, .36, 1), transform .7s cubic-bezier(.22, 1, .36, 1); }
+    .js .reveal.in { opacity: 1; transform: none; }
+    .reveal-delay-1 { transition-delay: .1s; }
+    .reveal-delay-2 { transition-delay: .2s; }
+    .reveal-delay-3 { transition-delay: .3s; }
+
+    /* =========================================================
+       NAVBAR
+    ========================================================= */
+    .nav {
+      position: fixed; inset: 0 0 auto 0; z-index: 60;
+      height: var(--nav-h);
+      display: flex; align-items: center;
+      transition: background .25s ease, box-shadow .25s ease, border-color .25s ease;
+      border-bottom: 1px solid transparent;
+    }
+    .nav.is-scrolled {
+      background: rgba(255, 255, 255, .82);
+      -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+      border-bottom-color: var(--line);
+      box-shadow: 0 4px 24px -12px rgba(14, 19, 34, .12);
+    }
+    .nav__inner { display: flex; align-items: center; gap: 28px; }
+    .nav__logo img { height: 40px; width: auto; }
+
+    .nav__links { display: flex; align-items: center; gap: 30px; margin-inline: auto; }
+    .nav__links a { font-size: 15px; font-weight: 500; color: var(--slate); position: relative; padding: 6px 0; transition: color .18s; }
+    .nav__links a::after {
+      content: ""; position: absolute; right: 0; bottom: 0; height: 2px; width: 0;
+      background: var(--brand); border-radius: 2px; transition: width .25s ease;
+    }
+    .nav__links a:hover { color: var(--ink); }
+    .nav__links a:hover::after { width: 100%; }
+
+    .nav__actions { display: flex; align-items: center; gap: 12px; }
+    .nav__phone {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-weight: 700; font-size: 14px; color: var(--ink);
+      padding: 9px 14px; border-radius: 12px; background: var(--brand-soft);
+      border: 1px solid #dce3ff; transition: background .18s, color .18s, border-color .18s;
+    }
+    .nav__phone svg { color: var(--brand); }
+    .nav__phone:hover { background: var(--brand); color: #fff; border-color: var(--brand); }
+    .nav__phone:hover svg { color: #fff; }
+
+    .nav__burger { display: none; width: 44px; height: 44px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); flex-direction: column; align-items: center; justify-content: center; gap: 5px; }
+    .nav__burger span { width: 18px; height: 2px; border-radius: 2px; background: var(--ink); transition: transform .25s, opacity .2s; }
+    .nav__burger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav__burger.is-open span:nth-child(2) { opacity: 0; }
+    .nav__burger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .mobile-menu {
+      position: fixed; inset: 0; z-index: 55; background: rgba(14, 19, 34, .4);
+      -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+      opacity: 0; pointer-events: none; transition: opacity .25s;
+    }
+    .mobile-menu.is-open { opacity: 1; pointer-events: auto; }
+    .mobile-menu__panel {
+      position: absolute; inset: var(--nav-h) 0 0 0; background: var(--bg);
+      border-top: 1px solid var(--line);
+      padding: 28px 5vw 48px; overflow-y: auto;
+      transform: translateY(-14px); transition: transform .3s ease;
+    }
+    .mobile-menu.is-open .mobile-menu__panel { transform: none; }
+    .mobile-menu__links { display: flex; flex-direction: column; gap: 4px; }
+    .mobile-menu__links a {
+      font-size: 17px; font-weight: 700; color: var(--ink);
+      padding: 13px 12px; border-radius: 14px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .mobile-menu__links a:hover { background: var(--brand-soft); color: var(--brand); }
+    .mobile-menu__extra { margin-top: 22px; border-top: 1px solid var(--line); padding-top: 22px; display: flex; flex-direction: column; gap: 12px; }
+    .mobile-menu__extra a { font-size: 14px; font-weight: 500; color: var(--slate); padding-inline: 12px; }
+    .mobile-menu__cta { margin-top: 28px; display: flex; flex-direction: column; gap: 12px; }
+
+    /* =========================================================
+       HERO
+    ========================================================= */
+    .hero {
+      position: relative; overflow: hidden;
+      padding: calc(var(--nav-h) + 56px) 0 88px;
+      background:
+        radial-gradient(60% 55% at 78% 8%, rgba(34, 69, 229, .08), transparent 60%),
+        radial-gradient(45% 45% at 12% 90%, rgba(23, 183, 52, .06), transparent 60%),
+        linear-gradient(180deg, #fbfcff 0%, var(--bg) 100%);
+    }
+    .hero__grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 56px; align-items: center; }
+
+    .hero__pill {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: 999px; padding: 8px 18px; font-size: 13.5px; font-weight: 700; color: var(--ink);
+      box-shadow: var(--sh-sm); margin-bottom: 26px;
+    }
+    .hero__pill .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--green); box-shadow: 0 0 0 4px rgba(23, 183, 52, .16);
+      animation: pulse 2.4s infinite;
+    }
+    @keyframes pulse { 0%, 100% { box-shadow: 0 0 0 3px rgba(23, 183, 52, .2); } 50% { box-shadow: 0 0 0 8px rgba(23, 183, 52, .06); } }
+
+    .hero__title { font-size: clamp(32px, 4.6vw, 54px); font-weight: 800; line-height: 1.45; letter-spacing: -1px; }
+    .hero__lead { color: var(--slate); font-size: clamp(15.5px, 1.6vw, 17.5px); margin-top: 20px; max-width: 34em; }
+
+    .hero__cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+    .hero__note { display: inline-flex; align-items: center; gap: 8px; margin-top: 22px; font-size: 13.5px; color: var(--muted); font-weight: 500; }
+    .hero__note svg { color: var(--green); }
+
+    .hero__visual { position: relative; display: flex; justify-content: center; }
+    .hero__glow {
+      position: absolute; inset: 6% 4% 0; border-radius: 40px;
+      background: radial-gradient(60% 70% at 50% 30%, rgba(34, 69, 229, .16), rgba(31, 126, 255, .05) 55%, transparent 75%);
+      filter: blur(28px);
+    }
+    .hero__card {
+      position: relative; z-index: 1;
+      width: min(430px, 100%);
+      border-radius: var(--r-lg);
+      background: linear-gradient(160deg, #ffffff 0%, #f3f6ff 100%);
+      border: 1px solid var(--line);
+      box-shadow: var(--sh-md);
+      padding: 26px;
+      animation: floaty 7s ease-in-out infinite;
+    }
+    @keyframes floaty { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+    .hero__card img { border-radius: var(--r-md); width: 100%; height: auto; }
+    .hero__card::after {
+      content: ""; position: absolute; inset: -14px; z-index: -1; border-radius: 32px;
+      border: 1px dashed rgba(34, 69, 229, .18);
+    }
+
+    .float-card {
+      position: absolute; z-index: 2;
+      display: flex; align-items: center; gap: 10px;
+      background: rgba(255, 255, 255, .9);
+      -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, .9);
+      box-shadow: var(--sh-md);
+      border-radius: 16px;
+      padding: 12px 16px;
+      font-size: 13px; font-weight: 700; color: var(--ink);
+      animation: floaty 6.5s ease-in-out infinite;
+    }
+    .float-card__ico {
+      width: 36px; height: 36px; border-radius: 11px; flex: none;
+      display: grid; place-items: center;
+    }
+    .float-card__ico--blue { background: var(--brand-soft); color: var(--brand); }
+    .float-card__ico--green { background: var(--green-soft); color: var(--green-deep); }
+    .float-card__ico--orange { background: var(--orange-soft); color: var(--orange-deep); }
+
+    .float-card--1 { top: 4%; right: -6%; animation-delay: .6s; }
+    .float-card--2 { bottom: 12%; right: -10%; animation-delay: 1.2s; }
+    .float-card--3 { bottom: -5%; left: -4%; animation-delay: .2s; }
+    .float-card small { display: block; font-weight: 500; color: var(--muted); font-size: 11.5px; }
+
+    /* =========================================================
+       TRUST STRIP
+    ========================================================= */
+    .trust { padding: 0 0 24px; }
+    .trust__grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--r-lg); box-shadow: var(--sh-sm);
+      padding: 22px 26px;
+    }
+    .trust__item { display: flex; align-items: center; gap: 14px; padding: 8px 0; }
+    .trust__ico {
+      width: 46px; height: 46px; flex: none; border-radius: 14px;
+      display: grid; place-items: center;
+    }
+    .trust__ico--blue { background: var(--brand-soft); color: var(--brand); }
+    .trust__ico--green { background: var(--green-soft); color: var(--green-deep); }
+    .trust__ico--orange { background: var(--orange-soft); color: var(--orange-deep); }
+    .trust__title { font-size: 14.5px; font-weight: 800; }
+    .trust__desc { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+
+    /* =========================================================
+       CATEGORIES
+    ========================================================= */
+    .cats { padding: 72px 0 96px; }
+    .cats__grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 18px; }
+    .cat {
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--r-md); padding: 22px 12px 18px;
+      display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center;
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+    .cat:hover { transform: translateY(-6px); box-shadow: var(--sh-md); border-color: #d3dcff; }
+    .cat__img {
+      width: 96px; height: 96px; border-radius: 50%;
+      display: grid; place-items: center; overflow: hidden;
+      background: linear-gradient(145deg, var(--brand-soft) 0%, #f7f9ff 100%);
+      transition: transform .3s ease;
+    }
+    .cat__img img { width: 78px; height: 78px; object-fit: contain; border-radius: 50%; }
+    .cat:hover .cat__img { transform: scale(1.06); }
+    .cat__name { font-size: 15.5px; font-weight: 800; }
+    .cat__more { font-size: 12.5px; color: var(--brand); font-weight: 700; display: inline-flex; align-items: center; gap: 5px; opacity: 0; transform: translateY(4px); transition: opacity .25s, transform .25s; }
+    .cat:hover .cat__more { opacity: 1; transform: none; }
+
+    /* =========================================================
+       BENTO
+    ========================================================= */
+    .bento { padding: 0 0 96px; }
+    .bento__grid {
+      display: grid; grid-template-columns: repeat(6, 1fr);
+      grid-auto-rows: auto; gap: 20px;
+    }
+    .bento__card {
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--r-lg); padding: 30px;
+      display: flex; flex-direction: column; gap: 14px;
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+    .bento__card:hover { transform: translateY(-4px); box-shadow: var(--sh-md); border-color: #d3dcff; }
+
+    .bento__large {
+      grid-column: span 3; grid-row: span 2;
+      background:
+        radial-gradient(70% 60% at 85% 0%, rgba(34, 69, 229, .1), transparent 60%),
+        linear-gradient(160deg, #ffffff 0%, var(--brand-soft) 100%);
+      justify-content: space-between;
+    }
+    .bento__large .bento__title { font-size: clamp(20px, 2.4vw, 26px); font-weight: 800; line-height: 1.6; }
+    .bento__large .bento__text { color: var(--slate); font-size: 14.5px; max-width: 42ch; }
+    .bento__chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+    .chip {
+      background: var(--surface); border: 1px solid var(--line); border-radius: 999px;
+      padding: 7px 16px; font-size: 13px; font-weight: 700; color: var(--ink);
+      box-shadow: var(--sh-sm);
+    }
+    .chip b { color: var(--brand); }
+    .bento__large .bento__art {
+      margin-top: 22px; padding: 20px; border-radius: var(--r-md);
+      background: rgba(255, 255, 255, .75); border: 1px solid rgba(34, 69, 229, .1);
+      display: flex; align-items: center; gap: 18px;
+    }
+    .bento__large .bento__art img { width: 84px; height: 84px; object-fit: contain; border-radius: 14px; }
+    .bento__large .bento__art p { font-size: 13px; color: var(--slate); }
+    .bento__large .bento__art p b { color: var(--ink); }
+
+    .bento__sm { grid-column: span 3; }
+    .bento__mini { grid-column: span 2; }
+
+    .bento__ico {
+      width: 48px; height: 48px; border-radius: 14px;
+      display: grid; place-items: center; flex: none;
+    }
+    .bento__title { font-size: 17px; font-weight: 800; }
+    .bento__text { font-size: 14px; color: var(--slate); }
+    .bento__list { display: flex; flex-direction: column; gap: 10px; margin-top: auto; }
+    .bento__list li { display: flex; align-items: center; gap: 10px; font-size: 13.5px; color: var(--slate); }
+    .bento__list .tick { color: var(--green); flex: none; }
+    .bento__list b { color: var(--ink); }
+
+    /* =========================================================
+       PRODUCTS
+    ========================================================= */
+    .products { padding: 96px 0; background: linear-gradient(180deg, var(--bg) 0%, #f1f4ff 100%); }
+    .tabs { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin-bottom: 44px; background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 6px; width: fit-content; margin-inline: auto; box-shadow: var(--sh-sm); }
+    .tab {
+      border: 0; background: transparent; border-radius: 999px;
+      padding: 9px 22px; font-size: 14.5px; font-weight: 700; color: var(--slate);
+      transition: color .18s, background .18s, box-shadow .18s;
+    }
+    .tab:hover { color: var(--ink); }
+    .tab.is-active { background: linear-gradient(135deg, var(--brand), #1f7eff); color: #fff; box-shadow: 0 6px 16px -6px rgba(34, 69, 229, .5); }
+
+    .products__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+    .product {
+      background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md);
+      overflow: hidden; display: flex; flex-direction: column;
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+    .product:hover { transform: translateY(-6px); box-shadow: var(--sh-md); border-color: #d3dcff; }
+    .product.is-hidden { display: none; }
+    .product__media { position: relative; background: #f4f6fc; display: block; }
+    .product__media img { aspect-ratio: 1 / 1; width: 100%; object-fit: cover; transition: transform .45s ease; }
+    .product:hover .product__media img { transform: scale(1.06); }
+    .product__badge {
+      position: absolute; top: 12px; right: 12px;
+      background: var(--orange); color: #fff; font-size: 12.5px; font-weight: 800;
+      padding: 4px 10px; border-radius: 999px; box-shadow: 0 4px 10px -3px rgba(242, 129, 59, .6);
+    }
+    .product__body { padding: 16px 16px 18px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+    .product__name { font-size: 14.5px; font-weight: 800; line-height: 1.7; }
+    .product__name a:hover { color: var(--brand); }
+    .product__model { font-size: 12px; color: var(--muted); direction: ltr; text-align: right; font-weight: 500; }
+    .product__price { margin-top: auto; padding-top: 10px; display: flex; align-items: baseline; gap: 10px; }
+    .product__price .now { font-size: 16px; font-weight: 800; color: var(--ink); }
+    .product__price .now small { font-size: 11px; font-weight: 500; color: var(--muted); }
+    .product__price .old { font-size: 12.5px; color: var(--muted); text-decoration: line-through; }
+    .product .btn { margin-top: 12px; }
+
+    .products__more { text-align: center; margin-top: 44px; }
+
+    /* =========================================================
+       BRANDS
+    ========================================================= */
+    .brands { padding: 96px 0; }
+    .brands__row { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 40px; }
+    .brand {
+      background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+      padding: 14px 30px; font-weight: 800; font-size: 16px; color: var(--ink);
+      direction: ltr; letter-spacing: 1px;
+      display: inline-flex; align-items: center; gap: 10px;
+      box-shadow: var(--sh-sm);
+      transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+    }
+    .brand:hover { transform: translateY(-4px); border-color: #d3dcff; box-shadow: var(--sh-md); }
+    .brand__dot { width: 8px; height: 8px; border-radius: 50%; }
+    .brand__note { text-align: center; margin-top: 22px; font-size: 13.5px; color: var(--muted); }
+
+    /* =========================================================
+       CTA BANNER
+    ========================================================= */
+    .cta { padding: 0 0 96px; }
+    .cta__card {
+      position: relative; overflow: hidden;
+      border-radius: 32px; padding: 72px 48px;
+      background: linear-gradient(135deg, #1a35c0 0%, #2245e5 45%, #1f7eff 100%);
+      color: #fff; text-align: center;
+      box-shadow: var(--sh-lg);
+    }
+    .cta__card::before, .cta__card::after {
+      content: ""; position: absolute; border-radius: 50%; pointer-events: none;
+    }
+    .cta__card::before { width: 340px; height: 340px; background: rgba(255, 255, 255, .1); top: -160px; left: -90px; }
+    .cta__card::after { width: 260px; height: 260px; background: rgba(255, 255, 255, .08); bottom: -130px; right: -60px; }
+    .cta__title { font-size: clamp(24px, 3.2vw, 36px); font-weight: 800; line-height: 1.6; position: relative; }
+    .cta__text { font-size: 15.5px; color: rgba(255, 255, 255, .85); max-width: 46ch; margin: 14px auto 0; position: relative; }
+    .cta__actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; margin-top: 34px; position: relative; }
+    .cta__actions .btn { min-width: 210px; }
+
+    /* =========================================================
+       FAQ
+    ========================================================= */
+    .faq { padding: 0 0 96px; }
+    .faq__list { max-width: 780px; margin-inline: auto; display: flex; flex-direction: column; gap: 14px; }
+    .faq__item {
+      background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md);
+      overflow: hidden; transition: border-color .2s ease, box-shadow .2s ease;
+    }
+    .faq__item.is-open { border-color: #d3dcff; box-shadow: var(--sh-sm); }
+    .faq__q {
+      width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px;
+      padding: 20px 24px; background: none; border: 0; text-align: right;
+      font-size: 16px; font-weight: 800; color: var(--ink);
+    }
+    .faq__chev { width: 30px; height: 30px; flex: none; border-radius: 10px; background: var(--brand-soft); color: var(--brand); display: grid; place-items: center; transition: transform .25s ease, background .25s ease, color .25s ease; }
+    .faq__item.is-open .faq__chev { transform: rotate(180deg); background: var(--brand); color: #fff; }
+    .faq__a { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+    .faq__a p { padding: 0 24px 22px; color: var(--slate); font-size: 14.5px; }
+    .faq__a a { color: var(--brand); font-weight: 700; }
+    .faq__a a:hover { text-decoration: underline; }
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+    .footer { background: #0e1322; color: #c3c9db; padding: 72px 0 0; margin-top: 16px; }
+    .footer__grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.3fr; gap: 44px; padding-bottom: 56px; }
+    .footer__brand img { height: 42px; width: auto; background: #fff; padding: 8px 14px; border-radius: 12px; }
+    .footer__brand p { font-size: 13.5px; line-height: 2; margin-top: 16px; max-width: 34ch; }
+    .footer__social { display: flex; gap: 10px; margin-top: 20px; }
+    .footer__social a {
+      width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center;
+      background: rgba(255, 255, 255, .06); border: 1px solid rgba(255, 255, 255, .09);
+      color: #c3c9db; transition: background .2s, color .2s, transform .2s;
+    }
+    .footer__social a:hover { background: var(--brand); color: #fff; transform: translateY(-3px); }
+    .footer__seals { display: flex; gap: 14px; margin-top: 20px; }
+    .footer__seals img { height: 72px; width: auto; background: #fff; border-radius: 12px; padding: 6px; border: 1px solid rgba(255, 255, 255, .12); }
+
+    .footer__title { color: #fff; font-size: 15px; font-weight: 800; margin-bottom: 18px; }
+    .footer__links { display: flex; flex-direction: column; gap: 10px; }
+    .footer__links a { font-size: 13.5px; color: #aeb6cc; transition: color .18s, padding-right .18s; }
+    .footer__links a:hover { color: #fff; padding-right: 5px; }
+    .footer__info { display: flex; flex-direction: column; gap: 16px; }
+    .footer__info li { display: flex; gap: 12px; align-items: flex-start; font-size: 13px; line-height: 1.9; color: #aeb6cc; }
+    .footer__info svg { color: var(--brand); flex: none; margin-top: 5px; }
+    .footer__info b { color: #fff; }
+
+    .footer__bottom {
+      border-top: 1px solid rgba(255, 255, 255, .08);
+      padding: 22px 0; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+      font-size: 12.5px; color: #8b93ab;
+    }
+    .footer__bottom a { color: #aeb6cc; }
+    .footer__bottom a:hover { color: #fff; }
+
+    /* =========================================================
+       RESPONSIVE
+    ========================================================= */
+    @media (max-width: 1100px) {
+      .products__grid { grid-template-columns: repeat(3, 1fr); }
+      .cats__grid { grid-template-columns: repeat(3, 1fr); }
+      .trust__grid { grid-template-columns: repeat(2, 1fr); gap: 20px 16px; }
+    }
+
+    @media (max-width: 980px) {
+      .nav__links { display: none; }
+      .nav__burger { display: flex; }
+      .hero__grid { grid-template-columns: 1fr; gap: 64px; }
+      .hero__visual { order: -1; }
+      .hero__title { font-size: clamp(30px, 6vw, 44px); }
+      .float-card--1 { right: 2%; top: 2%; }
+      .float-card--2 { right: -2%; }
+      .bento__grid { grid-template-columns: repeat(4, 1fr); }
+      .bento__large { grid-column: span 4; grid-row: auto; }
+      .bento__sm { grid-column: span 2; }
+      .bento__mini { grid-column: span 2; }
+      .footer__grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+    }
+
+    @media (max-width: 720px) {
+      .section { padding: 72px 0; }
+      .products { padding: 72px 0; }
+      .cats { padding: 56px 0 72px; }
+      .hero { padding-top: calc(var(--nav-h) + 40px); }
+
+      .trust__grid { grid-template-columns: 1fr; padding: 18px 22px; }
+      .trust__item { gap: 12px; }
+
+      .cats__grid { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 14px; padding-bottom: 10px; margin-inline: -5vw; padding-inline: 5vw; scrollbar-width: none; }
+      .cats__grid::-webkit-scrollbar { display: none; }
+      .cat { min-width: 150px; scroll-snap-align: center; }
+
+      .bento__grid { grid-template-columns: 1fr; }
+      .bento__sm, .bento__mini, .bento__large { grid-column: auto; grid-row: auto; }
+
+      .products__grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+      .tabs { border-radius: 18px; }
+      .tab { padding: 9px 14px; font-size: 13.5px; }
+
+      .cta__card { padding: 52px 22px; border-radius: 24px; }
+      .cta__actions .btn { min-width: 0; width: 100%; }
+
+      .footer__grid { grid-template-columns: 1fr; gap: 36px; }
+      .footer__bottom { justify-content: center; text-align: center; }
+
+      .nav__phone span { display: none; }
+      .nav__phone { padding: 9px 11px; }
+      .nav__actions .btn--sm { display: none; }
+    }
+
+    @media (max-width: 420px) {
+      .products__grid { grid-template-columns: 1fr; }
+      .hero__cta .btn { width: 100%; }
+      .float-card { padding: 10px 12px; font-size: 12px; }
+      .float-card__ico { width: 32px; height: 32px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+      html { scroll-behavior: auto; }
+      .js .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="nav__logo" aria-label="روبیک دات آی‌آر - صفحه نخست">
+        <img src="assets/logo.webp" alt="روبیک دات آی‌آر">
+      </a>
+
+      <nav class="nav__links" aria-label="منوی اصلی">
+        <a href="#categories">دسته‌بندی‌ها</a>
+        <a href="#why">چرا روبیک؟</a>
+        <a href="#products">محصولات</a>
+        <a href="#faq">سوالات متداول</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="nav__phone" href="tel:+982191300026">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>۰۲۱-۹۱۳۰۰۰۲۶</span>
+        </a>
+        <a href="#products" class="btn btn--primary btn--sm">مشاهده محصولات</a>
+        <button class="nav__burger" id="burger" aria-label="باز کردن منو" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__panel">
+      <nav class="mobile-menu__links" aria-label="منوی موبایل">
+        <a href="#categories">دسته‌بندی‌ها <span>←</span></a>
+        <a href="#why">چرا روبیک؟ <span>←</span></a>
+        <a href="#products">محصولات <span>←</span></a>
+        <a href="#faq">سوالات متداول <span>←</span></a>
+      </nav>
+      <div class="mobile-menu__extra">
+        <a href="https://rubik.ir/how-to/" target="_blank" rel="noopener">راهنمای خرید</a>
+        <a href="https://rubik.ir/blog/" target="_blank" rel="noopener">مقالات</a>
+        <a href="https://rubik.ir/about-us/" target="_blank" rel="noopener">آشنایی با ما</a>
+        <a href="https://rubik.ir/call-us/" target="_blank" rel="noopener">ارتباط با ما</a>
+      </div>
+      <div class="mobile-menu__cta">
+        <a href="tel:+982191300026" class="btn btn--primary btn--block">مشاوره رایگان: ۰۲۱-۹۱۳۰۰۰۲۶</a>
+        <a href="#products" class="btn btn--ghost btn--block">مشاهده محصولات</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <span class="hero__pill reveal"><span class="dot"></span>خرید هوشمندانه با قیمت و کیفیت عالی</span>
+        <h1 class="hero__title reveal reveal-delay-1">بزرگترین مرجع <span class="grad">روبیک و بازی فکری</span> در ایران</h1>
+        <p class="hero__lead reveal reveal-delay-2">از مکعب‌های مسابقاتی برندهای معتبر جهانی مثل گنز و کای‌وای تا جدیدترین فیجت‌ها، بردگیم‌ها و بازی‌های آموزشی کودک؛ همه در یک فروشگاه تخصصی، با مشاوره رایگان پیش از خرید.</p>
+        <div class="hero__cta reveal reveal-delay-3">
+          <a href="#products" class="btn btn--primary btn--lg">مشاهده محصولات</a>
+          <a href="tel:+982191300026" class="btn btn--ghost btn--lg">مشاوره رایگان</a>
+        </div>
+        <span class="hero__note reveal reveal-delay-3">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          پشتیبانی واتس‌اپ و بله: ۰۹۱۹-۳۹۳-۳۰۵۰
+        </span>
+      </div>
+
+      <div class="hero__visual reveal reveal-delay-1">
+        <div class="hero__glow" aria-hidden="true"></div>
+        <div class="hero__card">
+          <img src="assets/hero-cube.webp" alt="مکعب روبیک حرفه‌ای و مسابقاتی" width="300" height="268">
+        </div>
+        <div class="float-card float-card--1">
+          <span class="float-card__ico float-card__ico--blue">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+          </span>
+          <span>برندهای اصیل جهانی<small>GAN · QiYi · MoYu</small></span>
+        </div>
+        <div class="float-card float-card--2">
+          <span class="float-card__ico float-card__ico--green">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+          </span>
+          <span>آموزش رایگان حل روبیک<small>روش تست‌شده ۲۱ روبیک رایج</small></span>
+        </div>
+        <div class="float-card float-card--3">
+          <span class="float-card__ico float-card__ico--orange">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </span>
+          <span>مشاوره رایگان پیش از خرید<small>۰۲۱-۹۱۳۰۰۰۲۶</small></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TRUST STRIP ===================== -->
+  <section class="trust" aria-label="خدمات روبیک دات آی‌آر">
+    <div class="container">
+      <div class="trust__grid reveal">
+        <div class="trust__item">
+          <span class="trust__ico trust__ico--blue">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+          </span>
+          <div>
+            <p class="trust__title">مشاوره رایگان</p>
+            <p class="trust__desc">قبل از هر خرید، تلفنی راهنمایی می‌شوید</p>
+          </div>
+        </div>
+        <div class="trust__item">
+          <span class="trust__ico trust__ico--green">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+          </span>
+          <div>
+            <p class="trust__title">آموزش رایگان حل روبیک</p>
+            <p class="trust__desc">روش تست‌شده برای ۲۱ روبیک رایج</p>
+          </div>
+        </div>
+        <div class="trust__item">
+          <span class="trust__ico trust__ico--orange">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+          </span>
+          <div>
+            <p class="trust__title">خرید قسطی با اسنپ‌پی</p>
+            <p class="trust__desc">پرداخت راحت و اقساطی</p>
+          </div>
+        </div>
+        <div class="trust__item">
+          <span class="trust__ico trust__ico--blue">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-9 8.4 8.5 8.5 0 0 1-3.4-.7L3 21l1.8-5.6A8.38 8.38 0 0 1 3 11.5a8.5 8.5 0 0 1 8-8.5h.5a8.38 8.38 0 0 1 8.5 8.5z"/></svg>
+          </span>
+          <div>
+            <p class="trust__title">پشتیبانی واتس‌اپ و بله</p>
+            <p class="trust__desc">پاسخگویی سریع: ۰۹۱۹-۳۹۳-۳۰۵۰</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CATEGORIES ===================== -->
+  <section class="cats" id="categories">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">دسته‌بندی‌ها</span>
+        <h2 class="section__title">از کلاسیک تا جدید؛ یک دنیای کامل بازی فکری</h2>
+        <p class="section__sub">هر چیزی که برای یک سرگرمی فکریِ جدی لازم دارید، در دسته‌بندی‌های تخصصی ما پیدا می‌شود.</p>
+      </div>
+      <div class="cats__grid">
+        <a class="cat reveal" href="https://rubik.ir/product-category/روبیک/" target="_blank" rel="noopener">
+          <span class="cat__img"><img src="assets/cat-rubik.webp" alt="روبیک" loading="lazy"></span>
+          <span class="cat__name">روبیک</span>
+          <span class="cat__more">مشاهده
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </span>
+        </a>
+        <a class="cat reveal reveal-delay-1" href="https://rubik.ir/product-category/boardgame/" target="_blank" rel="noopener">
+          <span class="cat__img"><img src="assets/cat-boardgame.webp" alt="بردگیم" loading="lazy"></span>
+          <span class="cat__name">بردگیم</span>
+          <span class="cat__more">مشاهده
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </span>
+        </a>
+        <a class="cat reveal reveal-delay-2" href="https://rubik.ir/product-category/بازی-کودک/" target="_blank" rel="noopener">
+          <span class="cat__img"><img src="assets/cat-brain.webp" alt="بازی فکری" loading="lazy"></span>
+          <span class="cat__name">بازی فکری</span>
+          <span class="cat__more">مشاهده
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </span>
+        </a>
+        <a class="cat reveal" href="https://rubik.ir/product-category/بازی-کودک/اسباب-بازی/" target="_blank" rel="noopener">
+          <span class="cat__img"><img src="assets/cat-toy.webp" alt="اسباب بازی" loading="lazy"></span>
+          <span class="cat__name">اسباب بازی</span>
+          <span class="cat__more">مشاهده
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </span>
+        </a>
+        <a class="cat reveal reveal-delay-1" href="https://rubik.ir/product-category/fidget/" target="_blank" rel="noopener">
+          <span class="cat__img"><img src="assets/cat-fidget.webp" alt="فیجت" loading="lazy"></span>
+          <span class="cat__name">فیجت</span>
+          <span class="cat__more">مشاهده
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </span>
+        </a>
+        <a class="cat reveal reveal-delay-2" href="https://rubik.ir/product-category/stationery/" target="_blank" rel="noopener">
+          <span class="cat__img"><img src="assets/cat-stationery.webp" alt="لوازم تحریر" loading="lazy"></span>
+          <span class="cat__name">لوازم تحریر</span>
+          <span class="cat__more">مشاهده
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BENTO / WHY ===================== -->
+  <section class="bento" id="why">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">چرا روبیک دات آی‌آر؟</span>
+        <h2 class="section__title">یک مرجع کامل، نه فقط یک فروشگاه</h2>
+        <p class="section__sub">سال‌هاست تخصص ما فقط بازی فکری است؛ به همین دلیل انتخاب ما دقیق‌تر، قیمت ما منصفانه‌تر و راهنمایی ما درست‌تر است.</p>
+      </div>
+
+      <div class="bento__grid">
+        <div class="bento__card bento__large reveal">
+          <div>
+            <span class="bento__ico" style="background:var(--brand-soft);color:var(--brand);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+            </span>
+            <h3 class="bento__title" style="margin-top:14px;">همه‌چیز درباره مکعب، در یک‌جا</h3>
+            <p class="bento__text" style="margin-top:8px;">از مکعب ۲×۲ برای شروع تا روبیک‌های حرفه‌ای و مسابقاتی، انواع فیجت، بردگیم و بازی‌های آموزشی؛ کامل‌ترین پوشش محصولات فکری با برندهای معتبر دنیا.</p>
+          </div>
+          <ul class="bento__list">
+            <li><span class="tick"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>فقط برندهای معتبر و محصولات اصیل</li>
+            <li><span class="tick"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>مشاوره تخصصی رایگان پیش از خرید</li>
+            <li><span class="tick"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>آموزش رایگان برای شروع حل مکعب</li>
+          </ul>
+          <div class="bento__art">
+            <img src="assets/hero-cube.webp" alt="" loading="lazy">
+            <p><b>بزرگ‌ترین مرجع روبیک و بازی فکری در ایران</b><br>تخصص ما، انتخاب و سنجش دقیق هر محصول قبل از عرضه است.</p>
+          </div>
+        </div>
+
+        <div class="bento__card bento__sm reveal reveal-delay-1">
+          <span class="bento__ico" style="background:var(--brand-soft);color:var(--brand);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          </span>
+          <h3 class="bento__title">برندهای اصیل جهانی</h3>
+          <p class="bento__text">فقط محصولات اورجینال از برندهای معتبر دنیا؛ همان‌هایی که در مسابقات جهانی استفاده می‌شوند.</p>
+          <div class="bento__chips">
+            <span class="chip"><b>GAN</b></span>
+            <span class="chip"><b>QiYi</b></span>
+            <span class="chip"><b>MoYu</b></span>
+            <span class="chip"><b>YJ</b></span>
+          </div>
+        </div>
+
+        <div class="bento__card bento__sm reveal reveal-delay-2">
+          <span class="bento__ico" style="background:var(--green-soft);color:var(--green-deep);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-5 7 5v14"/><path d="M9 9h1M9 13h1M9 17h1M14 9h1M14 13h1M14 17h1"/></svg>
+          </span>
+          <h3 class="bento__title">از ۲×۲ تا ۱۰×۱۰</h3>
+          <p class="bento__text">هر سطحی که هستید؛ از اولین مکعب تا روبیک‌های بزرگ‌سایز و چالش‌برانگیز، برای هرکسی گزینه‌ای داریم.</p>
+        </div>
+
+        <div class="bento__card bento__mini reveal">
+          <span class="bento__ico" style="background:var(--brand-soft);color:var(--brand);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+          </span>
+          <h3 class="bento__title">مشاوره تخصصی رایگان</h3>
+          <p class="bento__text">قبل از خرید، گزینه مناسب بودجه و سطح خود را از ما بپرسید.</p>
+        </div>
+
+        <div class="bento__card bento__mini reveal reveal-delay-1">
+          <span class="bento__ico" style="background:var(--green-soft);color:var(--green-deep);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+          </span>
+          <h3 class="bento__title">آموزش رایگان</h3>
+          <p class="bento__text">یادگیری گام‌به‌گام حل روبیک با روش تست‌شده برای ۲۱ روبیک رایج.</p>
+        </div>
+
+        <div class="bento__card bento__mini reveal reveal-delay-2">
+          <span class="bento__ico" style="background:var(--orange-soft);color:var(--orange-deep);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/><path d="m7 15 4-4 3 3 4-4"/></svg>
+          </span>
+          <h3 class="bento__title">خرید قسطی</h3>
+          <p class="bento__text">با اسنپ‌پی راحت و اقساطی خرید کنید و پرداخت را به بعد موکول کنید.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRODUCTS ===================== -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">محصولات منتخب</span>
+        <h2 class="section__title">پرفروش‌ترین‌های امروز</h2>
+        <p class="section__sub">گزیده‌ای از محبوب‌ترین مکعب‌ها، فیجت‌ها و بازی‌های کودکِ کاربران روبیک دات آی‌آر.</p>
+      </div>
+
+      <div class="tabs reveal" role="tablist" aria-label="فیلتر دسته‌بندی محصولات">
+        <button class="tab is-active" data-filter="all" role="tab">همه</button>
+        <button class="tab" data-filter="rubik" role="tab">روبیک</button>
+        <button class="tab" data-filter="fidget" role="tab">فیجت</button>
+        <button class="tab" data-filter="kids" role="tab">بازی کودک</button>
+      </div>
+
+      <div class="products__grid" id="productsGrid">
+        <!-- روبیک -->
+        <article class="product reveal" data-cat="rubik">
+          <a class="product__media" href="https://rubik.ir/product/روبیک-3x3-گنز-16-مگلو-یو-وی-مکس/" target="_blank" rel="noopener">
+            <img src="assets/p-gan16max.jpg" alt="روبیک 3×3 گنز 16 مگلو مکس با پوشش UV" loading="lazy">
+          </a>
+          <div class="product__body">
+            <h3 class="product__name"><a href="https://rubik.ir/product/روبیک-3x3-گنز-16-مگلو-یو-وی-مکس/" target="_blank" rel="noopener">روبیک ۳×۳ گنز ۱۶ مگلو مکس با پوشش UV</a></h3>
+            <p class="product__model">GAN16 Maglev Max UV Coated</p>
+            <div class="product__price">
+              <span class="now">۲۷٬۹۰۰٬۰۰۰ <small>تومان</small></span>
+            </div>
+            <a class="btn btn--primary btn--block btn--sm" href="https://rubik.ir/product/روبیک-3x3-گنز-16-مگلو-یو-وی-مکس/" target="_blank" rel="noopener">مشاهده و خرید</a>
+          </div>
+        </article>
+
+        <article class="product reveal reveal-delay-1" data-cat="rubik">
+          <a class="product__media" href="https://rubik.ir/product/gan-356-maglev-uv-cube/" target="_blank" rel="noopener">
+            <img src="assets/p-gan16uv.jpg" alt="روبیک 3×3 گنز 16 مگلو با روکش UV" loading="lazy">
+            <span class="product__badge">٪۱۷-</span>
+          </a>
+          <div class="product__body">
+            <h3 class="product__name"><a href="https://rubik.ir/product/gan-356-maglev-uv-cube/" target="_blank" rel="noopener">روبیک ۳×۳ گنز ۱۶ مگلو با روکش UV</a></h3>
+            <p class="product__model">GAN16 Maglev UV</p>
+            <div class="product__price">
+              <span class="now">۲۳٬۹۰۰٬۰۰۰ <small>تومان</small></span>
+              <del class="old">۲۸٬۹۰۰٬۰۰۰</del>
+            </div>
+            <a class="btn btn--primary btn--block btn--sm" href="https://rubik.ir/product/gan-356-maglev-uv-cube/" target="_blank" rel="noopener">مشاهده و خرید</a>
+          </div>
+        </article>
+
+        <article class="product reveal reveal-delay-2" data-cat="rubik">
+          <a class="product__media" href="https://rubik.ir/product/gan460-m-4x4v2-sp-frosted/" target="_blank" rel="noopener">
+            <img src="assets/p-gan460.jpg" alt="روبیک 4×4 گنز 460 مگنت ورژن 2" loading="lazy">
+          </a>
+          <div class="product__body">
+            <h3 class="product__name"><a href="https://rubik.ir/product/gan460-m-4x4v2-sp-frosted/" target="_blank" rel="noopener">روبیک ۴×۴ گنز ۴۶۰ مگنت ورژن ۲</a></h3>
+            <p class="product__model">GAN460 M 4x4 (V2)</p>
+            <div class="product__price">
+              <span class="now">۱۷٬۹۳۹٬۰۰۰ <small>تومان</small></span>
+            </div>
+            <a class="btn btn--primary btn--block btn--sm" href="https://rubik.ir/product/gan460-m-4x4v2-sp-frosted/" target="_blank" rel="noopener">مشاهده و خرید</a>
+          </div>
+        </article>
+
+        <article class="product reveal reveal-delay-3" data-cat="rubik">
+          <a class="product__media" href="https://rubik.ir/product/روبیک-۳x۳-کایوای-تورنادو-ورژن-۳-پایونیر/" target="_blank" rel="noopener">
+            <img src="assets/p-tornado.jpg" alt="روبیک ۳×۳ کای‌وای تورنادو ورژن ۳ پایونیر" loading="lazy">
+          </a>
+          <div class="product__body">
+            <h3 class="product__name"><a href="https://rubik.ir/product/روبیک-۳x۳-کایوای-تورنادو-ورژن-۳-پایونیر/" target="_blank" rel="noopener">روبیک ۳×۳ کای‌وای تورنادو ورژن ۳ پایونیر</a></h3>
+            <p class="product__model">QiYi Tornado V3 Pioneer</p>
+            <div class="product__price">
+              <span class="now">۱۲٬۷۹۰٬۰۰۰ <small>تومان</small></span>
+            </div>
+            <a class="btn btn--primary btn--block btn--sm" href="https://rubik.ir/product/روبیک-۳x۳-کایوای-تورنادو-ورژن-۳-پایونیر/" target="_blank" rel="noopener">مشاهده و خرید</a>
+          </div>
+        </article>
+
+        <!-- فیجت -->
+        <article class="product reveal" data-cat="fidget">
+          <a class="product__media" href="https://rubik.ir/product/مگنت-باکی-بال-3-میلیمتری-216-تکه/" target="_blank" rel="noopener">
+            <img src="assets/p-bucky.jpg" alt="مگنت باکی بال ۳ میلیمتری ۲۱۶ تکه" loading="lazy">
+          </a>
+          <div class="product__body">
+            <h3 class="product__name"><a href="https://rubik.ir/product/مگنت-باکی-بال-3-میلیمتری-216-تکه/" target="_blank" rel="noopener">مگنت باکی بال ۳ میلی‌متری ۲۱۶ تکه (۷ رنگ)</a></h3>
+            <p class="product__model">Bucky Ball 216 pcs</p>
+            <div class="product__price">
+              <span class="now">۱٬۹۰۰٬۰۰۰ <small>تومان</small></span>
+            </div>
+            <a class="btn btn--primary btn--block btn--sm" href="https://rubik.ir/product/مگنت-باکی-بال-3-میلیمتری-216-تکه/" target="_blank" rel="noopener">مشاهده و خرید</a>
+          </div>
+        </article>
+
+        <article class="product reveal reveal-delay-1" data-cat="fidget">
+          <a class="product__media" href="https://rubik.ir/product/balance-metal-spinner-top-fidget/" target="_blank" rel="noopener">
+            <img src="assets/p-spinner.jpg" alt="فیجت فلزی اسپینری مدل بالانس" loading="lazy">
+          </a>
+          <div class="product__body">
+            <h3 class="product__name"><a href="https://rubik.ir/product/balance-metal-spinner-top-fidget/" target="_blank" rel="noopener">فیجت فلزی اسپینری مدل بالانس</a></h3>
+            <p class="product__model">Balance Metal Spinner</p>
+            <div class="product__price">
+              <span class="now">۱٬۲۰۰٬۰۰۰ <small>تومان</small></span>
+            </div>
+            <a class="btn btn--primary btn--block btn--sm" href="https://rubik.ir/product/balance-metal-spinner-top-fidget/" target="_blank" rel="noopener">مشاهده و خرید</a>
+          </div>
+        </article>
+
+        <article class="product reveal reveal-delay-2" data-cat="fidget">
+          <a class="product__media" href="https://rubik.ir/product/dotrix-360-magnetic-metal-slider-fidget/" target="_blank" rel="noopener">
+            <img src="assets/p-dotrix.jpg" alt="فیجت فلزی اسلایدی ۳۶۰ درجه مگنتی مدل داتریکس" loading="lazy">
+          </a>
+          <div class="product__body">
+            <h3 class="product__name"><a href="https://rubik.ir/product/dotrix-360-magnetic-metal-slider-fidget/" target="_blank" rel="noopener">فیجت فلزی اسلایدی ۳۶۰ درجه مگنتی مدل داتریکس</a></h3>
+            <p class="product__model">Dotrix 360 Magnetic Slider</p>
+            <div class="product__price">
+              <span class="now">۳٬۹۰۰٬۰۰۰ <small>تومان</small></span>
+            </div>
+            <a class="btn btn--primary btn--block btn--sm" href="https://rubik.ir/product/dotrix-360-magnetic-metal-slider-fidget/" target="_blank" rel="noopener">مشاهده و خرید</a>
+          </div>
+        </article>
+
+        <article class="product reveal reveal-delay-3" data-cat="fidget">
+          <a class="product__media" href="https://rubik.ir/product/falcon-metal-spinner-fidget/" target="_blank" rel="noopener">
+            <img src="assets/p-falcon.jpg" alt="فیجت فلزی اسپینری فلورسنت مدل فالکون" loading="lazy">
+            <span class="product__badge">٪۷-</span>
+          </a>
+          <div class="product__body">
+            <h3 class="product__name"><a href="https://rubik.ir/product/falcon-metal-spinner-fidget/" target="_blank" rel="noopener">فیجت فلزی اسپینری فلورسنت مدل فالکون</a></h3>
+            <p class="product__model">Falcon Metal Spinner</p>
+            <div class="product__price">
+              <span class="now">۴٬۲۰۰٬۰۰۰ <small>تومان</small></span>
+              <del class="old">۴٬۵۰۰٬۰۰۰</del>
+            </div>
+            <a class="btn btn--primary btn--block btn--sm" href="https://rubik.ir/product/falcon-metal-spinner-fidget/" target="_blank" rel="noopener">مشاهده و خرید</a>
+          </div>
+        </article>
+
+        <!-- بازی کودک -->
+        <article class="product reveal" data-cat="kids">
+          <a class="product__media" href="https://rubik.ir/product/wooden-3-piece-rectangle-puzzle/" target="_blank" rel="noopener">
+            <img src="assets/p-puzzle.jpg" alt="جورچین ۳ تکه مستطیل چوبی" loading="lazy">
+          </a>
+          <div class="product__body">
+            <h3 class="product__name"><a href="https://rubik.ir/product/wooden-3-piece-rectangle-puzzle/" target="_blank" rel="noopener">جورچین ۳ تکه مستطیل چوبی (۶ طرح)</a></h3>
+            <p class="product__model">Wooden Rectangle Puzzle</p>
+            <div class="product__price">
+              <span class="now">۴۵۹٬۰۰۰ <small>تومان</small></span>
+            </div>
+            <a class="btn btn--primary btn--block btn--sm" href="https://rubik.ir/product/wooden-3-piece-rectangle-puzzle/" target="_blank" rel="noopener">مشاهده و خرید</a>
+          </div>
+        </article>
+
+        <article class="product reveal reveal-delay-1" data-cat="kids">
+          <a class="product__media" href="https://rubik.ir/product/mini-magnet-drawing-board/" target="_blank" rel="noopener">
+            <img src="assets/p-magboard.jpg" alt="صفحه طراحی مگنتی جیبی" loading="lazy">
+          </a>
+          <div class="product__body">
+            <h3 class="product__name"><a href="https://rubik.ir/product/mini-magnet-drawing-board/" target="_blank" rel="noopener">صفحه طراحی مگنتی جیبی (۴ طرح)</a></h3>
+            <p class="product__model">Mini Magnet Drawing Board</p>
+            <div class="product__price">
+              <span class="now">۶۳۹٬۰۰۰ <small>تومان</small></span>
+            </div>
+            <a class="btn btn--primary btn--block btn--sm" href="https://rubik.ir/product/mini-magnet-drawing-board/" target="_blank" rel="noopener">مشاهده و خرید</a>
+          </div>
+        </article>
+
+        <article class="product reveal reveal-delay-2" data-cat="kids">
+          <a class="product__media" href="https://rubik.ir/product/ousa-bana-delicious-stall/" target="_blank" rel="noopener">
+            <img src="assets/p-ousa.jpg" alt="اوسا بنا مدل دکه خوشمزه" loading="lazy">
+            <span class="product__badge">٪۱۰-</span>
+          </a>
+          <div class="product__body">
+            <h3 class="product__name"><a href="https://rubik.ir/product/ousa-bana-delicious-stall/" target="_blank" rel="noopener">اوسا بنا مدل دکه خوشمزه</a></h3>
+            <p class="product__model">Ousa Bana Delicious Stall</p>
+            <div class="product__price">
+              <span class="now">۹۳۹٬۰۰۰ <small>تومان</small></span>
+              <del class="old">۱٬۰۳۹٬۰۰۰</del>
+            </div>
+            <a class="btn btn--primary btn--block btn--sm" href="https://rubik.ir/product/ousa-bana-delicious-stall/" target="_blank" rel="noopener">مشاهده و خرید</a>
+          </div>
+        </article>
+
+        <article class="product reveal reveal-delay-3" data-cat="kids">
+          <a class="product__media" href="https://rubik.ir/product/فرمان-موزیکال-اسباب-بازی/" target="_blank" rel="noopener">
+            <img src="assets/p-wheel.jpg" alt="فرمان موزیکال اسباب‌بازی" loading="lazy">
+          </a>
+          <div class="product__body">
+            <h3 class="product__name"><a href="https://rubik.ir/product/فرمان-موزیکال-اسباب-بازی/" target="_blank" rel="noopener">فرمان موزیکال اسباب‌بازی</a></h3>
+            <p class="product__model">Musical Steering Wheel</p>
+            <div class="product__price">
+              <span class="now">۵۵۹٬۰۰۰ <small>تومان</small></span>
+            </div>
+            <a class="btn btn--primary btn--block btn--sm" href="https://rubik.ir/product/فرمان-موزیکال-اسباب-بازی/" target="_blank" rel="noopener">مشاهده و خرید</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="products__more reveal">
+        <a class="btn btn--ghost btn--lg" href="https://rubik.ir/shop/" target="_blank" rel="noopener">مشاهده همه محصولات فروشگاه</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BRANDS ===================== -->
+  <section class="brands" aria-label="برندهای معتبر">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">برندهای معتبر</span>
+        <h2 class="section__title">برندهایی که با اصالت عرضه می‌کنیم</h2>
+        <p class="section__sub">محصولاتی که در مسابقات جهانی روبیک و بازارهای تخصصی دنیا شناخته‌شده هستند.</p>
+      </div>
+      <div class="brands__row reveal reveal-delay-1">
+        <span class="brand"><span class="brand__dot" style="background:#e21b3c;"></span>GAN</span>
+        <span class="brand"><span class="brand__dot" style="background:#2245e5;"></span>QiYi</span>
+        <span class="brand"><span class="brand__dot" style="background:#17b734;"></span>MoYu</span>
+        <span class="brand"><span class="brand__dot" style="background:#f4813b;"></span>YJ</span>
+        <span class="brand"><span class="brand__dot" style="background:#7b2ff7;"></span>X-Man Pad</span>
+      </div>
+      <p class="brand__note reveal reveal-delay-2">به‌همراه ده‌ها برند معتبر دیگر در روبیک، بردگیم و اسباب‌بازی.</p>
+    </div>
+  </section>
+
+  <!-- ===================== CTA BANNER ===================== -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta__card reveal">
+        <h2 class="cta__title">مشاوره رایگان پیش از خرید</h2>
+        <p class="cta__text">مطمئن نیستید کدام مکعب یا بازی برای شما مناسب است؟ کارشناسان ما در واتس‌اپ، بله و تلفن آماده راهنمایی شما هستند.</p>
+        <div class="cta__actions">
+          <a href="tel:+982191300026" class="btn btn--white btn--lg">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            تماس: ۰۲۱-۹۱۳۰۰۰۲۶
+          </a>
+          <a href="https://wa.me/send?phone=989193933050" target="_blank" rel="noopener" class="btn btn--outline-white btn--lg">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-9 8.4 8.5 8.5 0 0 1-3.4-.7L3 21l1.8-5.6A8.38 8.38 0 0 1 3 11.5a8.5 8.5 0 0 1 8-8.5h.5a8.38 8.38 0 0 1 8.5 8.5z"/></svg>
+            گفت‌وگو در واتس‌اپ
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">سوالات متداول</span>
+        <h2 class="section__title">هر سوالی دارید، جوابش اینجاست</h2>
+        <p class="section__sub">پاسخ پرتکرارترین سوالات خریداران؛ برای جزئیات بیشتر به صفحه راهنمای خرید سر بزنید.</p>
+      </div>
+
+      <div class="faq__list">
+        <div class="faq__item reveal">
+          <button class="faq__q" aria-expanded="false">خرید از روبیک دات آی‌آر چگونه انجام می‌شود؟
+            <span class="faq__chev"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="faq__a"><p>محصول موردنظر را به سبد خرید اضافه کنید، اطلاعات ارسال را وارد کرده و پرداخت را انجام دهید. اگر در هر مرحله سوالی داشتید، با <a href="tel:+982191300026">۰۲۱-۹۱۳۰۰۰۲۶</a> تماس بگیرید یا از <a href="https://rubik.ir/how-to/" target="_blank" rel="noopener">راهنمای خرید</a> استفاده کنید.</p></div>
+        </div>
+
+        <div class="faq__item reveal reveal-delay-1">
+          <button class="faq__q" aria-expanded="false">روش‌های ارسال کالا چیست؟
+            <span class="faq__chev"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="faq__a"><p>جزئیات کامل روش‌های ارسال (پست، تیپاکس و پیک) در صفحه <a href="https://rubik.ir/posting-methods/" target="_blank" rel="noopener">روش‌های ارسال کالا</a> توضیح داده شده است. سفارش‌ها در بسته‌بندی ایمن و استاندارد ارسال می‌شوند.</p></div>
+        </div>
+
+        <div class="faq__item reveal reveal-delay-2">
+          <button class="faq__q" aria-expanded="false">روش‌های پرداخت و خرید قسطی چگونه است؟
+            <span class="faq__chev"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="faq__a"><p>علاوه بر پرداخت آنلاین، امکان <a href="https://rubik.ir/آموزش-خرید-اقساطی-از-اسنپ-پی/" target="_blank" rel="noopener">خرید قسطی با اسنپ‌پی</a> نیز فراهم است. برای آشنایی با همه گزینه‌ها صفحه <a href="https://rubik.ir/payment-methods/" target="_blank" rel="noopener">روش‌های پرداخت</a> را ببینید.</p></div>
+        </div>
+
+        <div class="faq__item reveal reveal-delay-3">
+          <button class="faq__q" aria-expanded="false">شرایط بازگشت کالا چیست؟
+            <span class="faq__chev"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="faq__a"><p>بر اساس <a href="https://rubik.ir/terms-and-conditions/" target="_blank" rel="noopener">شرایط بازگشت کالا</a>، در صورت ایراد یا مغایرت محصول، امکان بازگشت وجود دارد. کافی است از طریق پشتیبانی با ما در ارتباط باشید.</p></div>
+        </div>
+
+        <div class="faq__item reveal reveal-delay-1">
+          <button class="faq__q" aria-expanded="false">می‌خواهم روبیک حل کردن را یاد بگیرم؛ از کجا شروع کنم؟
+            <span class="faq__chev"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="faq__a"><p>در بخش <a href="https://rubik.ir/learn-rubik/" target="_blank" rel="noopener">آموزش رایگان حل روبیک</a>، روش تست‌شده حل ۲۱ روبیک رایج قدم‌به‌قدم توضیح داده شده است. یک مکعب ۳×۳ باکیفیت انتخاب کنید و شروع کنید!</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/logo.webp" alt="روبیک دات آی‌آر">
+          <p>بزرگترین مرجع فروش روبیک و بازی فکری در ایران؛ از سال‌های دور، همراه خریداران تخصصی بازی‌های فکری.</p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/ArashMaslehatjoo/" target="_blank" rel="noopener" aria-label="اینستاگرام">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://t.me/Rubik_dot_ir" target="_blank" rel="noopener" aria-label="تلگرام">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4z"/></svg>
+            </a>
+            <a href="https://wa.me/989193933050" target="_blank" rel="noopener" aria-label="واتس‌اپ">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-9 8.4 8.5 8.5 0 0 1-3.4-.7L3 21l1.8-5.6A8.38 8.38 0 0 1 3 11.5a8.5 8.5 0 0 1 8-8.5h.5a8.38 8.38 0 0 1 8.5 8.5z"/></svg>
+            </a>
+            <a href="https://www.youtube.com/c/Arashmaslehatjoo" target="_blank" rel="noopener" aria-label="یوتیوب">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            </a>
+            <a href="http://ble.ir/join/9Qgb7v41UM" target="_blank" rel="noopener" aria-label="بله">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-9 8.4 8.5 8.5 0 0 1-3.4-.7L3 21l1.8-5.6A8.38 8.38 0 0 1 3 11.5a8.5 8.5 0 0 1 8-8.5h.5a8.38 8.38 0 0 1 8.5 8.5z"/></svg>
+            </a>
+          </div>
+          <div class="footer__seals">
+            <a href="https://trustseal.enamad.ir/?id=57422&Code=eFYmDkPJvDQj9sMbIwgb" target="_blank" rel="noopener"><img src="assets/enamad.webp" alt="نماد اعتماد الکترونیکی" loading="lazy"></a>
+            <a href="#"><img src="assets/kasbokar.webp" alt="اتحادیه کسب و کارهای مجازی" loading="lazy"></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__title">خدمات</h4>
+          <div class="footer__links">
+            <a href="https://rubik.ir/posting-methods/" target="_blank" rel="noopener">روش‌های ارسال کالا</a>
+            <a href="https://rubik.ir/payment-methods/" target="_blank" rel="noopener">روش‌های پرداخت</a>
+            <a href="https://rubik.ir/faq/" target="_blank" rel="noopener">پرسش‌های متداول</a>
+            <a href="https://rubik.ir/terms-and-conditions/" target="_blank" rel="noopener">شرایط بازگشت کالا</a>
+            <a href="https://rubik.ir/privacy-policy/" target="_blank" rel="noopener">حفظ حریم خصوصی</a>
+            <a href="https://rubik.ir/آموزش-خرید-اقساطی-از-اسنپ-پی/" target="_blank" rel="noopener">خرید قسطی اسنپ‌پی</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__title">دسترسی سریع</h4>
+          <div class="footer__links">
+            <a href="https://rubik.ir" target="_blank" rel="noopener">صفحه نخست</a>
+            <a href="https://rubik.ir/about-us/" target="_blank" rel="noopener">درباره ما</a>
+            <a href="https://rubik.ir/call-us/" target="_blank" rel="noopener">ارتباط با ما</a>
+            <a href="https://rubik.ir/product-category/روبیک/" target="_blank" rel="noopener">روبیک</a>
+            <a href="https://rubik.ir/product-category/boardgame/" target="_blank" rel="noopener">بردگیم</a>
+            <a href="https://rubik.ir/product-category/بازی-کودک/اسباب-بازی/" target="_blank" rel="noopener">اسباب بازی</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__title">تماس با ما</h4>
+          <ul class="footer__info">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>فروشگاه: تهران، خیابان گاندی، بعد از بیمارستان گاندی، پلاک ۱۰۴، فروشگاه روبیک دات‌آی‌آر</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>فروشگاه: <b>۰۲۱-۸۸۴۷۸۰۸۵</b><br>ساعت کار: ۱۰ صبح الی ۲۲</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>دفتر مرکزی: تهران، خیابان ولی‌عصر، بالاتر از پارک ساعی، کوچه سی و ششم، پلاک ۸</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>دفتر مرکزی: <b>۰۲۱-۹۱۳۰۰۰۲۶</b><br>ساعت کار: ۹ صبح الی ۱۷</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-9 8.4 8.5 8.5 0 0 1-3.4-.7L3 21l1.8-5.6A8.38 8.38 0 0 1 3 11.5a8.5 8.5 0 0 1 8-8.5h.5a8.38 8.38 0 0 1 8.5 8.5z"/></svg>
+              <span>پشتیبانی واتس‌اپ و بله: <b>۰۹۱۹-۳۹۳-۳۰۵۰</b></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>تمامی حقوق برای روبیک دات آی‌آر محفوظ است | rubik.ir © ۱۴۰۵</span>
+        <span>طراحی و اجرا: <a href="https://hamimweb.com" target="_blank" rel="noopener">حامیم وب</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ---------- Navbar: scrolled state ----------
+    const nav = document.getElementById('nav');
+    const onScroll = () => nav.classList.toggle('is-scrolled', window.scrollY > 24);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // ---------- Mobile menu ----------
+    const burger = document.getElementById('burger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const toggleMenu = (open) => {
+      burger.classList.toggle('is-open', open);
+      mobileMenu.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.style.overflow = open ? 'hidden' : '';
+    };
+    burger.addEventListener('click', () => toggleMenu(!mobileMenu.classList.contains('is-open')));
+    mobileMenu.addEventListener('click', (e) => {
+      if (e.target === mobileMenu || e.target.classList.contains('mobile-menu__panel') || e.target.closest('a')) toggleMenu(false);
+    });
+    window.addEventListener('keydown', (e) => { if (e.key === 'Escape') toggleMenu(false); });
+
+    // ---------- Scroll reveal ----------
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+
+    // ---------- Product tabs ----------
+    const tabs = document.querySelectorAll('.tab');
+    const products = document.querySelectorAll('.product');
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        tabs.forEach((t) => t.classList.remove('is-active'));
+        tab.classList.add('is-active');
+        const filter = tab.dataset.filter;
+        products.forEach((p) => {
+          const show = filter === 'all' || p.dataset.cat === filter;
+          p.classList.toggle('is-hidden', !show);
+          if (show) {
+            p.classList.remove('in');
+            requestAnimationFrame(() => requestAnimationFrame(() => p.classList.add('in')));
+          }
+        });
+      });
+    });
+
+    // ---------- FAQ accordion ----------
+    document.querySelectorAll('.faq__item').forEach((item) => {
+      const q = item.querySelector('.faq__q');
+      const a = item.querySelector('.faq__a');
+      q.addEventListener('click', () => {
+        const isOpen = item.classList.contains('is-open');
+        document.querySelectorAll('.faq__item.is-open').forEach((i) => {
+          i.classList.remove('is-open');
+          i.querySelector('.faq__a').style.maxHeight = null;
+          i.querySelector('.faq__q').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('is-open');
+          a.style.maxHeight = a.scrollHeight + 'px';
+          q.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
